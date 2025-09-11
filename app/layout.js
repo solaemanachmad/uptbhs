@@ -1,18 +1,19 @@
-import { Geist, Geist_Mono } from "next/font/google";
+import localFont from "next/font/local";
 import { Inter } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils"
 import { Toaster } from "@/components/ui/sonner";
 import { connectToDatabase } from "@/service/mongo";
 
-const geistSans = Geist({
+const geistSans = localFont({
+  src: "./fonts/GeistVF.woff",
   variable: "--font-geist-sans",
-  subsets: ["latin"],
+  weight: "100 900",
 });
-
-const geistMono = Geist_Mono({
+const geistMono = localFont({
+  src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
-  subsets: ["latin"],
+  weight: "100 900",
 });
 
 export const metadata = {
@@ -24,7 +25,7 @@ const poppins = Inter({subsets: ['latin'], weight: ['400', '700'], variable: '--
 export default async function RootLayout({ children }) {
   
   const connect = await connectToDatabase();
-  console.log(connect);
+  // console.log(connect);
 
   return (
     <html lang="en">
