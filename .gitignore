@@ -39,3 +39,20 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+
+# Windows system files
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Mac system files
+Icon?
+.Spotlight-V100
+.Trashes
+
+# IDE/editor
+.vscode/
+.idea/
+*.swp
+*.swo

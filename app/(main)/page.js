@@ -67,7 +67,7 @@ const HomePage = async () => {
       {/* Categories Section */}
       <section
         id="categories"
-        className="container space-y-6  py-8  md:py-12 lg:py-24"
+        className="container space-y-6  py-8  md:py-12 lg:py-24 pl-6"
       >
         <div className="flex items-center justify-between">
           <SectionTitle>Categories</SectionTitle>
@@ -103,7 +103,7 @@ const HomePage = async () => {
       </section>
 
       {/* Courses */}
-      <section id="courses" className="container space-y-6   md:py-12 lg:py-24">
+      <section id="courses" className="container space-y-6   md:py-12 lg:py-24 pl-6">
         <div className="flex items-center justify-between">
           <SectionTitle>Courses</SectionTitle>
           <Link
